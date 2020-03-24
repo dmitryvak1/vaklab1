@@ -10,10 +10,10 @@ int main() {
     string valname;
     string valcolor;
 
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+	//SetConsoleCP(1251);
+	//SetConsoleOutputCP(1251);
 
-    setlocale(LC_ALL, "Russian");
+   // setlocale(LC_ALL, "Russian");
 
     Car rrr(valname, valcolor, valnum);
 	Car rrr2;
