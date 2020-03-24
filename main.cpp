@@ -18,24 +18,24 @@ int main() {
     Car rrr(valname, valcolor, valnum);
 	Car rrr2;
 b:
-	cout <<"\tНажмите 1 чтобы ввести машину\n";
-	cout <<"\tНажмите 2 чтобы посмотреть машину\n";
-	cout <<"\tНажмите 3 чтобы выйти\n\n";
+	cout <<"\press 1 for create car\n";
+	cout <<"\press 2 for print car\n";
+	cout <<"\press 3 for out from program\n\n";
 	cin >>a;
 
 	switch (a)
 	{
 	    case 1://///////////////////////////////
 	        {
-    cout << "Внести имя машины: ";
+    cout << "enter name car: ";
     cin>>valname;
       rrr.SetName(valname);
 
-    cout <<"введите цвет машины: ";
+    cout <<"enter color car's : ";
     cin>>valcolor;
       rrr.SetColor(valcolor);
 
-    cout << "Внести номер машины:";
+    cout << "enter number car's :";
     cin>>valnum;
        rrr.SetNumber(valnum);
 
@@ -45,9 +45,9 @@ b:
         case 2://///////////////////////////////////
             {
     cout << "\n";
-    cout << "Имя машины: " << rrr.GetName() << endl;
-	cout << "цвет машины: " << rrr.GetColor() << endl;
-	cout << "номер машины: " << rrr.GetNumber() << endl << endl;
+    cout << "name: " << rrr.GetName() << endl;
+	cout << "color: " << rrr.GetColor() << endl;
+	cout << "number: " << rrr.GetNumber() << endl << endl;
 
             cout<<"rrr"<<endl;
             rrr.print();
@@ -55,7 +55,7 @@ b:
             cout<<"rrr2"<<endl;
             rrr2.print();
 
-            Car rrr3 = rrr;
+            Car rrr3 = rrr;//use countructor copy
             cout<<"rrr3"<<endl;
             rrr3.print();
 
